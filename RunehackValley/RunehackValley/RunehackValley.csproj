@@ -38,12 +38,14 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Character\PlayerCharacterAnimations.cs" />
+    <Compile Include="Graphics\Animation.cs" />
+    <Compile Include="Graphics\Animations.cs" />
     <Compile Include="Character\CharSpace.cs" />
     <Compile Include="Character\HorizontalDirection.cs" />
     <Compile Include="Character\KeyboardController.cs" />
     <Compile Include="Character\Movement.cs" />
     <Compile Include="Character\Distance.cs" />
-    <Compile Include="Character\Direction.cs" />
     <Compile Include="Character\PlayerCharacter.cs" />
     <Compile Include="Character\VerticalDirection.cs" />
     <Compile Include="Engine\GameInstance.cs" />
