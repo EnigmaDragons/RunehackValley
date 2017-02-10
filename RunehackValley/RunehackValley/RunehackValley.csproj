@@ -51,6 +51,8 @@
     <Compile Include="MonoGame\ViewBackgroundColor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specifics\MailBox.cs" />
+    <Compile Include="Specifics\Map.cs" />
     <Compile Include="Specifics\SmallPartOfTown.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +66,7 @@
     <Content Include="Content\Images\Farm.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Images\Mailbox.png" />
     <Content Include="Content\Music\FarmMusic.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

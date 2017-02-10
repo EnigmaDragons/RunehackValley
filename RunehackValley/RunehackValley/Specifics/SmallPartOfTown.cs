@@ -31,7 +31,7 @@ namespace RunehackValley.Specifics
 
         public void Draw(SpriteBatch sprites)
         {
-            sprites.Draw(mapTexture, new Rectangle(+6, +10, 23 * 16 + 12, 17 * 16 + 6), Color.White);
+            sprites.Draw(mapTexture, new Rectangle(0, 0, 1408, 1088), Color.White);
         }
     }
 }

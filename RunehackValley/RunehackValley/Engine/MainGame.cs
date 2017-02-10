@@ -9,10 +9,13 @@ namespace RunehackValley.Engine
     {
         private SpriteBatch _sprites;
         private IGameView _currentView;
+        private GraphicsDeviceManager _graphicsManager;
 
         public MainGame()
         {
-            new GraphicsDeviceManager(this);
+            _graphicsManager = new GraphicsDeviceManager(this);
+            _graphicsManager.PreferredBackBufferWidth = 1408;
+            _graphicsManager.PreferredBackBufferHeight = 1088;
             Content.RootDirectory = "Content";
         }
 
