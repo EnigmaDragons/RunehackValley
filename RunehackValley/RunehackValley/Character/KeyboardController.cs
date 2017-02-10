@@ -25,17 +25,17 @@ namespace RunehackValley.Character
         public void Update(GameTime deltaTime)
         {
             var ks = Keyboard.GetState();
-            if (ks.IsKeyDown(Keys.W))
+            if (ks.IsKeyDown(Keys.W) || ks.IsKeyDown(Keys.Up))
                 _character.IssueCommand(VerticalDirection.Up);
-            else if (ks.IsKeyDown(Keys.S))
+            else if (ks.IsKeyDown(Keys.S) || ks.IsKeyDown(Keys.Down))
                 _character.IssueCommand(VerticalDirection.Down);
             else
                 _character.IssueCommand(VerticalDirection.None);
 
 
-            if (ks.IsKeyDown(Keys.A))
+            if (ks.IsKeyDown(Keys.A) || ks.IsKeyDown(Keys.Left))
                 _character.IssueCommand(HorizontalDirection.Left);
-            else if (ks.IsKeyDown(Keys.D))
+            else if (ks.IsKeyDown(Keys.D) || ks.IsKeyDown(Keys.Right))
                 _character.IssueCommand(HorizontalDirection.Right);
             else
                 _character.IssueCommand(HorizontalDirection.None);

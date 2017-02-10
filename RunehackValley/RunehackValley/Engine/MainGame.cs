@@ -20,7 +20,6 @@ namespace RunehackValley.Engine
         protected override void Initialize()
         {
             new GameInstance().SetGame(this);
-            _currentView = new SmallPartOfTown();
             base.Initialize();
         }
 
