@@ -60,6 +60,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Sprites\Character\nami-d1.png" />
+    <Content Include="Content\Sprites\Character\nami-d2.png" />
+    <Content Include="Content\Sprites\Character\nami-d3.png" />
+    <Content Include="Content\Sprites\Character\nami-d4.png" />
+    <Content Include="Content\Sprites\Character\nami-l1.png" />
+    <Content Include="Content\Sprites\Character\nami-l2.png" />
+    <Content Include="Content\Sprites\Character\nami-l3.png" />
+    <Content Include="Content\Sprites\Character\nami-l4.png" />
+    <Content Include="Content\Sprites\Character\nami-r1.png" />
+    <Content Include="Content\Sprites\Character\nami-r2.png" />
+    <Content Include="Content\Sprites\Character\nami-r3.png" />
+    <Content Include="Content\Sprites\Character\nami-r4.png" />
+    <Content Include="Content\Sprites\Character\nami-u1.png" />
+    <Content Include="Content\Sprites\Character\nami-u2.png" />
+    <Content Include="Content\Sprites\Character\nami-u3.png" />
+    <Content Include="Content\Sprites\Character\nami-u4.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
