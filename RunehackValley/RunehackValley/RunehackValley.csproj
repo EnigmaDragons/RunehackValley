@@ -53,6 +53,7 @@
     <Compile Include="Engine\IGameView.cs" />
     <Compile Include="Engine\INavigator.cs" />
     <Compile Include="Engine\MainGame.cs" />
+    <Compile Include="MonoGame\LoadedSong.cs" />
     <Compile Include="MonoGame\LoadedTexture.cs" />
     <Compile Include="MonoGame\RectangleTexture.cs" />
     <Compile Include="MonoGame\ViewBackgroundColor.cs" />
@@ -117,12 +118,42 @@
     <Content Include="Content\Images\Sprites\Character\nami-u4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Images\Farm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\FarmMusic.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Music\FarmMusic.wma">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sprites\Character\nami-d1.png" />
+    <Content Include="Content\Sprites\Character\nami-d2.png" />
+    <Content Include="Content\Sprites\Character\nami-d3.png" />
+    <Content Include="Content\Sprites\Character\nami-d4.png" />
+    <Content Include="Content\Sprites\Character\nami-l1.png" />
+    <Content Include="Content\Sprites\Character\nami-l2.png" />
+    <Content Include="Content\Sprites\Character\nami-l3.png" />
+    <Content Include="Content\Sprites\Character\nami-l4.png" />
+    <Content Include="Content\Sprites\Character\nami-r1.png" />
+    <Content Include="Content\Sprites\Character\nami-r2.png" />
+    <Content Include="Content\Sprites\Character\nami-r3.png" />
+    <Content Include="Content\Sprites\Character\nami-r4.png" />
+    <Content Include="Content\Sprites\Character\nami-u1.png" />
+    <Content Include="Content\Sprites\Character\nami-u2.png" />
+    <Content Include="Content\Sprites\Character\nami-u3.png" />
+    <Content Include="Content\Sprites\Character\nami-u4.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <None Include="Content\Music\FarmMusic.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

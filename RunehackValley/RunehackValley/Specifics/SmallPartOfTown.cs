@@ -1,31 +1,37 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 using RunehackValley.Engine;
+using RunehackValley.MonoGame;
 
 namespace RunehackValley.Specifics
 {
     public class SmallPartOfTown : IGameView
     {
-
+        private Texture2D mapTexture;
+        private Song backgroundTrack;
 
         public void LoadContent()
         {
-            throw new System.NotImplementedException();
+            mapTexture = new LoadedTexture("Farm.png").Get();
+            backgroundTrack = new LoadedSong("FarmMusic").Get();
+            MediaPlayer.IsRepeating = true;
+            MediaPlayer.Play(backgroundTrack);
         }
 
         public void UnloadContent()
         {
-            throw new System.NotImplementedException();
+            mapTexture.Dispose();
+            backgroundTrack.Dispose();
         }
 
         public void Update(GameTime deltaTime)
         {
-            throw new System.NotImplementedException();
         }
 
         public void Draw(SpriteBatch sprites)
         {
-            throw new System.NotImplementedException();
+            sprites.Draw(mapTexture, new Rectangle(+6, +10, 23 * 16 + 12, 17 * 16 + 6), Color.White);
         }
     }
 }
