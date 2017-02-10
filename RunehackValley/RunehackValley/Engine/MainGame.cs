@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using RunehackValley.Specifics;
 
 namespace RunehackValley.Engine
 {
@@ -18,6 +19,7 @@ namespace RunehackValley.Engine
         protected override void Initialize()
         {
             new GameInstance().SetGame(this);
+            _currentView = new SmallPartOfTown();
             base.Initialize();
         }
 
