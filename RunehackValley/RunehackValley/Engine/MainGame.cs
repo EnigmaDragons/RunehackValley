@@ -9,9 +9,10 @@ namespace RunehackValley.Engine
         private SpriteBatch _sprites;
         private IGameView _currentView;
 
-        public MainGame()
+        public MainGame(IGameView startingView)
         {
             new GraphicsDeviceManager(this);
+            _currentView = startingView;
             Content.RootDirectory = "Content";
         }
 

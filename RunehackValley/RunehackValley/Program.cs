@@ -1,5 +1,6 @@
 ﻿using System;
 using RunehackValley.Engine;
+using RunehackValley.Views;
 
 namespace RunehackValley
 {
@@ -15,7 +16,7 @@ namespace RunehackValley
         [STAThread]
         static void Main()
         {
-            using (var game = new MainGame())
+            using (var game = new MainGame(new PlayerMoveTestView()))
                 game.Run();
         }
     }
