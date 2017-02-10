@@ -25,7 +25,7 @@ namespace RunehackValley.Specifics
 
         public void Draw(SpriteBatch sprites)
         {
-            sprites.Draw(texture, new Vector2(14 * 64, 4 * 64), Color.White);
+            sprites.Draw(texture, new Vector2(14 * 64 + 18, 4 * 64 + 4), Color.White);
         }
     }
 }

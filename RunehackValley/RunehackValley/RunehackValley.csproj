@@ -38,6 +38,14 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Character\CharSpace.cs" />
+    <Compile Include="Character\HorizontalDirection.cs" />
+    <Compile Include="Character\KeyboardController.cs" />
+    <Compile Include="Character\Movement.cs" />
+    <Compile Include="Character\Distance.cs" />
+    <Compile Include="Character\Direction.cs" />
+    <Compile Include="Character\PlayerCharacter.cs" />
+    <Compile Include="Character\VerticalDirection.cs" />
     <Compile Include="Engine\GameInstance.cs" />
     <Compile Include="Engine\GraphicsDeviceInstance.cs" />
     <Compile Include="Engine\IGame.cs" />
@@ -53,7 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specifics\MailBox.cs" />
     <Compile Include="Specifics\Map.cs" />
-    <Compile Include="Specifics\SmallPartOfTown.cs" />
+    <Compile Include="Views\SmallPartOfTown.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
@@ -63,10 +71,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Sprites\Character\nami-d1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-d2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-d3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-d4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-l1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-l2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-l3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-l4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-r1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-r2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-r3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-r4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-u1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-u2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-u3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Sprites\Character\nami-u4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Images\Farm.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Images\Mailbox.png" />
+    <Content Include="Content\Images\Mailbox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Music\FarmMusic.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -94,6 +152,7 @@
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Content\Music\FarmMusic.xnb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

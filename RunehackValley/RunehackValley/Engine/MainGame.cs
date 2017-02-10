@@ -11,18 +11,18 @@ namespace RunehackValley.Engine
         private IGameView _currentView;
         private GraphicsDeviceManager _graphicsManager;
 
-        public MainGame()
+        public MainGame(IGameView startingView)
         {
             _graphicsManager = new GraphicsDeviceManager(this);
             _graphicsManager.PreferredBackBufferWidth = 1408;
             _graphicsManager.PreferredBackBufferHeight = 1088;
+            _currentView = startingView;
             Content.RootDirectory = "Content";
         }
 
         protected override void Initialize()
         {
             new GameInstance().SetGame(this);
-            _currentView = new SmallPartOfTown();
             base.Initialize();
         }
 
@@ -49,7 +49,7 @@ namespace RunehackValley.Engine
 
         protected override void Draw(GameTime gameTime)
         {
-            _sprites.Begin();
+            _sprites.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp);
             _currentView?.Draw(_sprites);
             _sprites.End();
             base.Draw(gameTime);
